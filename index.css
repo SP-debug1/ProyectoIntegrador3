@@ -1,7 +1,7 @@
-/* Estilos generales */
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #e9eef2; /* Fondo más suave */
+    background-color: #e9eef2; 
     margin: 0;
     padding: 20px;
 }
@@ -12,7 +12,7 @@ body {
 }
 
 h1, h2 {
-    color: #004a7c; /* Azul UVM (o similar) */
+    color: #004a7c; 
     text-align: center;
     margin-bottom: 15px;
 }
@@ -24,7 +24,7 @@ hr {
     margin: 25px 0;
 }
 
-/* Estilo del Formulario */
+
 .formulario-card {
     background: white;
     padding: 20px;
@@ -42,7 +42,7 @@ input, select, textarea {
     box-sizing: border-box; 
 }
 
-/* Botones */
+
 button {
     width: 100%;
     padding: 14px;
@@ -54,24 +54,23 @@ button {
     margin-top: 5px;
 }
 
-.btn-primary { background-color: #007bff; } /* Botón Guardar */
+.btn-primary { background-color: #007bff; } 
 .btn-danger { 
     background-color: #dc3545; 
-    width: auto; /* Para que el botón Eliminar sea más pequeño */
+    width: auto; 
     padding: 8px 15px;
     font-size: 0.9em;
     float: right;
 } 
 
-/* Tarjetas de Materias (La lista) */
 .tarjeta-materia {
     background: white;
     padding: 15px;
     border-radius: 8px;
     margin-bottom: 15px;
-    border-left: 6px solid #004a7c; /* Borde azul UVM */
+    border-left: 6px solid #004a7c; 
     box-shadow: 0 2px 5px rgba(0,0,0,0.15);
-    overflow: auto; /* Para que el float del botón no rompa el diseño */
+    overflow: auto; 
 }
 
 .tarjeta-materia h3 {
@@ -84,6 +83,6 @@ button {
 
 .horario-texto {
     font-weight: bold;
-    color: #e8a900; /* Color llamativo para la hora */
+    color: #e8a900; 
     font-size: 1.1em;
 }
