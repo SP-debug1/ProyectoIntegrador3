@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' https://www.gstatic.com; connect-src 'self' https://firestore.googleapis.com https://securetoken.googleapis.com https://identitytoolkit.googleapis.com;">
+    
+    <title>Mi Tira de Materias UVM Manager</title>
+    <link rel="stylesheet" href="css/index.css">
+
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+</head>
+<body>
+
+    <div class="app-container">
+        <h1>Mi Horario UVM Manager</h1>
+        
+        <div class="formulario-card">
+            <h2>Añadir Nueva Materia</h2>
+            <input type="text" id="inputMateria" placeholder="Nombre de la Materia (ej. Álgebra Superior)">
+            
+            <select id="selectDia">
+                <option value="Lunes">Lunes</option>
+                <option value="Martes">Martes</option>
+                <option value="Miércoles">Miércoles</option>
+                <option value="Jueves">Jueves</option>
+                <option value="Viernes">Viernes</option>
+            </select>
+            
+            <input type="time" id="inputHoraInicio" placeholder="Hora de Inicio">
+            <input type="text" id="inputSalon" placeholder="Salón/Aula (ej. Lab 305)">
+
+            <button onclick="guardarMateria()" class="btn-primary">💾 Guardar Materia</button>
+        </div>
+
+        <hr>
+
+        <h2>Horario Completo</h2>
+        <div id="listaMaterias" class="lista-container">
+            <p>Cargando materias...</p>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
